@@ -59,10 +59,10 @@ ul { display: block; }
 ul li { display: inline-block; margin: 0 10px; }
 ul li a { opacity: 0.5; }
 ul li a:hover { opacity: 1; -webkit-transition:all 0.2s ease-in-out; }
-ul li.resume a { width: 33px; height: 33px; display: block; background: transparent url('images/info.png') top center no-repeat; text-indent: -9999px; }
-ul li.linkedin a { width: 33px; height: 33px; display: block; background: transparent url('images/linkedin.png') top center no-repeat; text-indent: -9999px; }
-ul li.github a { width: 33px; height: 33px; display: block; background: transparent url('images/github.png') top center no-repeat; text-indent: -9999px; }
-ul li.twitter a { width: 33px; height: 33px; display: block; background: transparent url('images/twitter.png') top center no-repeat; text-indent: -9999px; }
-ul li.email a { width: 33px; height: 33px; display: block; background: transparent url('images/email.png') top center no-repeat; text-indent: -9999px; }
+ul li.resume a { width: 33px; height: 33px; display: block; background: transparent url('https://github.com/lukemichaeleisenberg/lukemichaeleisenberg.github.io/images/info.png') top center no-repeat; text-indent: -9999px; }
+ul li.linkedin a { width: 33px; height: 33px; display: block; background: transparent url('https://github.com/lukemichaeleisenberg/lukemichaeleisenberg.github.io/images/linkedin.png') top center no-repeat; text-indent: -9999px; }
+ul li.github a { width: 33px; height: 33px; display: block; background: transparent url('https://github.com/lukemichaeleisenberg/lukemichaeleisenberg.github.io/images/github.png') top center no-repeat; text-indent: -9999px; }
+ul li.twitter a { width: 33px; height: 33px; display: block; background: transparent url('https://github.com/lukemichaeleisenberg/lukemichaeleisenberg.github.io/images/twitter.png') top center no-repeat; text-indent: -9999px; }
+ul li.email a { width: 33px; height: 33px; display: block; background: transparent url('https://github.com/lukemichaeleisenberg/lukemichaeleisenberg.github.io/images/email.png') top center no-repeat; text-indent: -9999px; }
 
 .content { max-width: 480px; padding: 0 20px; display: block; margin: 15% auto 0; }
