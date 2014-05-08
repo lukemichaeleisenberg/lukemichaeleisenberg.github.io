@@ -47,9 +47,9 @@ table {
 html { width: 100%; -webkit-font-smoothing: antialiased; }
 body { width: 100%; padding: 0; margin: 0; background: #000; text-align: center; }
 
-h1 { font-size: 1.8em; line-height: 1.8em; color: #fff; padding: 0; margin: 0px; font-family: 'ariel', helvetica, arial, sans-serif; font-weight: 200; }
+h1 { font-size: 1.8em; line-height: 1.8em; color: #fff; opacity: .75; padding: 0; margin: 0px; font-family: 'helvetica neue', helvetica, arial, sans-serif; font-weight: 200; }
 
-p { font-size: 1.2em; line-height: 1.35em; color: #fff; padding: 0; margin: 20px 0 30px; font-family: 'ariel', helvetica, arial, sans-serif; font-weight: 200; }
+p { font-size: 1.2em; line-height: 1.35em; color: #fff; opacity: .75; padding: 0; margin:15px 0 30px; font-family: 'helvetica neue', helvetica, arial, sans-serif; font-weight: 200; }
 p strong { font-weight: 500; }
 
 a { color: #ffcc00; text-decoration: none; }
@@ -57,7 +57,7 @@ a:hover { color: #fff; -webkit-transition:all 0.2s ease-in-out; }
 
 ul { display: block; }
 ul li { display: inline-block; margin: 0 10px; }
-ul li a { opacity: 0.5; }
+ul li a { opacity: 0.6; }
 ul li a:hover { opacity: 1; -webkit-transition:all 0.2s ease-in-out; }
 ul li.resume a { width: 33px; height: 33px; display: block; background: transparent url('images/info.png') top center no-repeat; text-indent: -9999px; }
 ul li.linkedin a { width: 33px; height: 33px; display: block; background: transparent url('images/linkedin.png') top center no-repeat; text-indent: -9999px; }
