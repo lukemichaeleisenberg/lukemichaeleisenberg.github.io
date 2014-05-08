@@ -47,9 +47,9 @@ table {
 html { width: 100%; -webkit-font-smoothing: antialiased; }
 body { width: 100%; padding: 0; margin: 0; background: #000; text-align: center; }
 
-h1 { font-size: 1.8em; line-height: 1.8em; color: #fff; padding: 0; margin: 0px; font-family: 'helvetica neue', helvetica, arial, sans-serif; font-weight: 200; }
+h1 { font-size: 1.8em; line-height: 1.8em; color: #fff; padding: 0; margin: 0px; font-family: 'ariel', helvetica, arial, sans-serif; font-weight: 200; }
 
-p { font-size: 1.2em; line-height: 1.35em; color: #fff; padding: 0; margin: 20px 0 30px; font-family: 'helvetica neue', helvetica, arial, sans-serif; font-weight: 200; }
+p { font-size: 1.2em; line-height: 1.35em; color: #fff; padding: 0; margin: 20px 0 30px; font-family: 'ariel', helvetica, arial, sans-serif; font-weight: 200; }
 p strong { font-weight: 500; }
 
 a { color: #ffcc00; text-decoration: none; }
