@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+body {
+  text-align: center;
+}
+
+.header {
+  text-align: left;
+  font-family: 'Arimo', sans-serif;
+  padding: 20px 40px 20px 40px;
+}
+
+.about-me {
+  font-family: 'Noto Serif', serif;
+  padding: 20px 40px 20px 40px;
+}
+
+#me-photo {
+  float: left;
+  padding: 10px;
+}
+
+
+#about-me-icon {
+
+}
+
+#resume-icon {
+
+}
+
+#github-icon {
+
+}
+
+#message-me-icon {
+
+}
