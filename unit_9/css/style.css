@@ -1,13 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
-
 html, body {
   margin:0;
   padding:0;
 }
 
-body {
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body, h1, header p {
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p, ul {
+  font-family: "Crimson Text", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  margin-top: 0px;
+  border-top: 0px;
+  margin-bottom: .5em;
+  border-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+  border-top: 0px;
+}
+
+ul {
+  margin-top: 0px;
+  border-top: 0px;
 }
 
 li {
@@ -73,15 +91,17 @@ header p {
 }
 
 a {
-  color: #000; text-decoration: none;
+  color: #000;
+  text-decoration: underline;
 }
 
 a:hover {
   color: #605e5e; -webkit-transition:all 0.2s ease-in-out;
 }
 
-a {
+.icons a {
   opacity: 0.9;
+  text-decoration: none;
 }
 
 
