@@ -3,8 +3,9 @@ html, body {
   padding:0;
 }
 
-body, h1, header p {
-  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body, h1, header p, h2 {
+  font-family: "Oswald", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:normal;
 }
 
 p, ul {
@@ -39,7 +40,7 @@ header {
 
 header h1 {
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 header p {
@@ -64,7 +65,7 @@ header p {
 }
 
 .luke-photo {
-  background-image: url("../images/HIGHRES_small.jpg");
+  background-image: url("../images/HIGHRES_smallest.jpg");
   background-size: cover;
   background-position: center top;
 }
@@ -81,8 +82,8 @@ header p {
 }
 
 .icons {
+  margin-top: 10px;
   text-align: center;
-  margin-bottom: 10px
 }
 
 .icon-group-item {
