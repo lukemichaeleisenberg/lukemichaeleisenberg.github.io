@@ -10,6 +10,7 @@ body, h1, header p, h2 {
 
 p, ul {
   font-family: "Crimson Text", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
 }
 
 h2 {
@@ -75,7 +76,7 @@ header p {
 }
 
 #personal-info {
-  margin-top: 2em;
+  margin-top: 1.5em;
   width:95%;
   vertical-align: middle;
   margin-left: 0px;
