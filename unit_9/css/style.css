@@ -8,6 +8,7 @@ body, h1, header p {
 }
 
 p, ul {
+  font-size: 17px;
   font-family: "Crimson Text", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -24,12 +25,14 @@ p {
 }
 
 ul {
-  margin-top: 0px;
-  border-top: 0px;
+  margin-left: 10px;
+  padding-left: 0;
 }
 
 li {
   list-style-type: none;
+  margin-left: 10px;
+  padding-left: 0;
 }
 
 header {
