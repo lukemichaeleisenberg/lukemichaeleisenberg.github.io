@@ -73,10 +73,13 @@ header p {
 #right{
   width:49%;
   float:right;
+  height: 100vh
 }
 
 #personal-info {
+  margin-top: 3em;
   width:95%;
+  vertical-align: middle;
   margin-left: 0px;
   margin-right: 5%;
 }
