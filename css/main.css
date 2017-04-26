@@ -25,12 +25,14 @@ p {
 }
 
 ul {
-  margin-top: 0px;
-  border-top: 0px;
+  margin-left: 10px;
+  padding-left: 0;
 }
 
 li {
   list-style-type: none;
+  margin-left: 5px;
+  padding-left: 0;
 }
 
 header {
@@ -73,7 +75,7 @@ header p {
 }
 
 #personal-info {
-  margin-top: 2.5em;
+  margin-top: 2em;
   width:95%;
   vertical-align: middle;
   margin-left: 0px;
