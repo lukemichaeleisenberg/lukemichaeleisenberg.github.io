@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<section id='left' class="luke-photo" title="Photo of Luke Eisenberg">
+	<section id='left' onload="fadeIn(this);" class="luke-photo" title="Photo of Luke Eisenberg">
 	</section>
 	<section id="right" class="clearfix">
 		<header>
@@ -61,3 +61,25 @@
 	</section>
 </body>
 </html>
+
+<script>
+	function fadeIn(el) {
+	  console.log("junk");
+	  el.style.opacity = 0;
+
+	  var last = +new Date();
+	  var tick = function() {
+	    el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+	    last = +new Date();
+
+	    if (+el.style.opacity < 1) {
+	      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 4);
+	    }
+	  };
+
+	  tick();
+	}
+
+	var el = document.getElementById("left");
+	fadeIn(el);
+</script>
