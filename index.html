@@ -63,8 +63,7 @@
 </html>
 
 <script>
-	function fadeIn(el) {
-	  console.log("junk");
+function fadeIn(el) {
 	  el.style.opacity = 0;
 
 	  var last = +new Date();
@@ -78,8 +77,8 @@
 	  };
 
 	  tick();
-	}
+}
 
-	var el = document.getElementById("left");
-	fadeIn(el);
+var el = document.getElementById("left");
+window.onload = fadeIn(el);
 </script>
