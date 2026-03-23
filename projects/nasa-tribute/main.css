@@ -1,0 +1,32 @@
+html, body, #hero-image{
+  width:100%;
+  height:100%;
+}
+
+#hero-image{   
+  background:url('https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb_0.gif') center center;
+  background-size:cover;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+#content{
+  padding:20px;
+}
+
+.well {
+	background-color: #323232
+}
+
+.intro {
+  padding: 15px 0px;
+}
+
+footer {
+  padding: 15px, 0px, 0px, 0px
+}
