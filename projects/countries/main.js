@@ -67,10 +67,10 @@ function renderList(countries) {
 		return;
 	}
 	list.innerHTML = countries.map(c => `
-		<div class="country-item" data-code="${c.code}" tabindex="0" role="button" aria-label="${c.name}">
-			<span class="flag">${c.emoji}</span>
-			<span class="name">${c.name}</span>
-			<span class="code">${c.code}</span>
+		<div class="country-item" data-code="${c.code}" data-cy="country-item" tabindex="0" role="button" aria-label="${c.name}">
+			<span class="flag" data-cy="country-flag">${c.emoji}</span>
+			<span class="name" data-cy="country-name">${c.name}</span>
+			<span class="code" data-cy="country-code">${c.code}</span>
 		</div>
 	`).join('');
 	count.textContent = `${countries.length} countries`;
@@ -109,7 +109,7 @@ async function selectCountry(code) {
 }
 
 function tag(text, accent) {
-	return `<span class="tag${accent ? ' accent' : ''}">${text}</span>`;
+	return `<span class="tag${accent ? ' accent' : ''}" data-cy="tag">${text}</span>`;
 }
 
 function renderDetail(c) {
@@ -122,44 +122,44 @@ function renderDetail(c) {
 		: tag('no state data');
 
 	panel.innerHTML = `
-		<div class="detail-content">
-			<div class="detail-hero">
-				<div class="detail-emoji">${c.emoji}</div>
+		<div class="detail-content" data-cy="detail-content">
+			<div class="detail-hero" data-cy="detail-hero">
+				<div class="detail-emoji" data-cy="detail-emoji">${c.emoji}</div>
 				<div class="detail-names">
-					<h1>${c.name}</h1>
-					${c.native && c.native !== c.name ? `<div class="native">${c.native}</div>` : ''}
-					<span class="code-badge">${c.code}</span>
+					<h1 data-cy="detail-country-name">${c.name}</h1>
+					${c.native && c.native !== c.name ? `<div class="native" data-cy="detail-native">${c.native}</div>` : ''}
+					<span class="code-badge" data-cy="code-badge">${c.code}</span>
 				</div>
 			</div>
-			<div class="detail-grid">
-				<div class="detail-card">
-					<div class="card-label">continent</div>
-					<div class="card-value">${c.continent?.name ?? '—'}</div>
+			<div class="detail-grid" data-cy="detail-grid">
+				<div class="detail-card" data-cy="detail-card">
+					<div class="card-label" data-cy="card-label">continent</div>
+					<div class="card-value" data-cy="card-value">${c.continent?.name ?? '—'}</div>
 				</div>
-				<div class="detail-card">
-					<div class="card-label">capital</div>
-					<div class="card-value">${c.capital ?? '—'}</div>
+				<div class="detail-card" data-cy="detail-card">
+					<div class="card-label" data-cy="card-label">capital</div>
+					<div class="card-value" data-cy="card-value">${c.capital ?? '—'}</div>
 				</div>
-				<div class="detail-card">
-					<div class="card-label">phone code</div>
-					<div class="card-value">+${c.phone ?? '—'}</div>
+				<div class="detail-card" data-cy="detail-card">
+					<div class="card-label" data-cy="card-label">phone code</div>
+					<div class="card-value" data-cy="card-value">+${c.phone ?? '—'}</div>
 				</div>
-				<div class="detail-card">
-					<div class="card-label">currency</div>
-					<div class="card-value">${c.currency ?? '—'}</div>
+				<div class="detail-card" data-cy="detail-card">
+					<div class="card-label" data-cy="card-label">currency</div>
+					<div class="card-value" data-cy="card-value">${c.currency ?? '—'}</div>
 				</div>
-				<div class="detail-card full">
-					<div class="card-label">languages</div>
-					<div class="card-value"><div class="tags">${langs}</div></div>
+				<div class="detail-card full" data-cy="detail-card">
+					<div class="card-label" data-cy="card-label">languages</div>
+					<div class="card-value" data-cy="card-value"><div class="tags" data-cy="tags">${langs}</div></div>
 				</div>
-				<div class="detail-card full">
-					<div class="card-label">states / provinces (${c.states?.length ?? 0})</div>
-					<div class="card-value"><div class="tags">${states}</div></div>
+				<div class="detail-card full" data-cy="detail-card">
+					<div class="card-label" data-cy="card-label">states / provinces (${c.states?.length ?? 0})</div>
+					<div class="card-value" data-cy="card-value"><div class="tags" data-cy="tags">${states}</div></div>
 				</div>
 				${c.awsRegion ? `
-				<div class="detail-card full">
-					<div class="card-label">aws region</div>
-					<div class="card-value"><code style="font-family:'DM Mono',monospace;font-size:0.85rem">${c.awsRegion}</code></div>
+				<div class="detail-card full" data-cy="detail-card">
+					<div class="card-label" data-cy="card-label">aws region</div>
+					<div class="card-value" data-cy="card-value"><code style="font-family:'DM Mono',monospace;font-size:0.85rem">${c.awsRegion}</code></div>
 				</div>` : ''}
 			</div>
 		</div>

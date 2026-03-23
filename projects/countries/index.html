@@ -18,23 +18,23 @@
 
 <div class="shell">
 	<!-- Sidebar -->
-	<aside class="sidebar">
+	<aside class="sidebar" data-cy="sidebar">
 		<div class="sidebar-head">
 			<h2>all countries</h2>
 			<div class="search-wrap">
 				<span class="search-icon">⌕</span>
-				<input type="text" id="searchInput" placeholder="search…" autocomplete="off" />
+				<input type="text" id="searchInput" data-cy="search-input" placeholder="search…" autocomplete="off" />
 			</div>
 		</div>
-		<div class="country-list" id="countryList">
+		<div class="country-list" id="countryList" data-cy="country-list">
 			<div class="loading-spinner"><div class="spinner"></div> fetching…</div>
 		</div>
-		<div class="list-count" id="listCount"></div>
+		<div class="list-count" id="listCount" data-cy="list-count"></div>
 	</aside>
 
 	<!-- Detail -->
-	<main class="detail" id="detailPanel">
-		<div class="detail-placeholder">
+	<main class="detail" id="detailPanel" data-cy="detail-panel">
+		<div class="detail-placeholder" data-cy="detail-placeholder">
 			<span class="globe">🌍</span>
 			<p>select a country to explore</p>
 		</div>
@@ -42,18 +42,18 @@
 </div>
 
 <!-- GraphQL inspector -->
-<button class="gql-toggle" id="gqlToggle">{ } graphql</button>
-<div class="gql-panel" id="gqlPanel">
+<button class="gql-toggle" id="gqlToggle" data-cy="gql-toggle">{ } graphql</button>
+<div class="gql-panel" id="gqlPanel" data-cy="gql-panel">
 	<div class="gql-panel-head">
 		<span>graphql inspector</span>
-		<button class="gql-close" id="gqlClose">✕</button>
+		<button class="gql-close" id="gqlClose" data-cy="gql-close">✕</button>
 	</div>
 	<div class="gql-tabs">
-		<button class="gql-tab active" data-tab="query">query</button>
-		<button class="gql-tab" data-tab="response">last response</button>
+		<button class="gql-tab active" data-tab="query" data-cy="gql-tab">query</button>
+		<button class="gql-tab" data-tab="response" data-cy="gql-tab">last response</button>
 	</div>
 	<div class="gql-body" id="gqlBody">
-		<pre id="gqlContent"></pre>
+		<pre id="gqlContent" data-cy="gql-content"></pre>
 	</div>
 </div>
 
