@@ -132,32 +132,32 @@ function renderDetail(c) {
 				</div>
 			</div>
 			<div class="detail-grid" data-cy="detail-grid">
-				<div class="detail-card" data-cy="detail-card">
+				<div class="detail-card" data-cy="detail-continent">
 					<div class="card-label" data-cy="card-label">continent</div>
 					<div class="card-value" data-cy="card-value">${c.continent?.name ?? '—'}</div>
 				</div>
-				<div class="detail-card" data-cy="detail-card">
+				<div class="detail-card" data-cy="detail-capital">
 					<div class="card-label" data-cy="card-label">capital</div>
 					<div class="card-value" data-cy="card-value">${c.capital ?? '—'}</div>
 				</div>
-				<div class="detail-card" data-cy="detail-card">
+				<div class="detail-card" data-cy="detail-phone-code">
 					<div class="card-label" data-cy="card-label">phone code</div>
 					<div class="card-value" data-cy="card-value">+${c.phone ?? '—'}</div>
 				</div>
-				<div class="detail-card" data-cy="detail-card">
+				<div class="detail-card" data-cy="detail-currency">
 					<div class="card-label" data-cy="card-label">currency</div>
 					<div class="card-value" data-cy="card-value">${c.currency ?? '—'}</div>
 				</div>
-				<div class="detail-card full" data-cy="detail-card">
+				<div class="detail-card full" data-cy="detail-languages">
 					<div class="card-label" data-cy="card-label">languages</div>
 					<div class="card-value" data-cy="card-value"><div class="tags" data-cy="tags">${langs}</div></div>
 				</div>
-				<div class="detail-card full" data-cy="detail-card">
+				<div class="detail-card full" data-cy="detail-states">
 					<div class="card-label" data-cy="card-label">states / provinces (${c.states?.length ?? 0})</div>
 					<div class="card-value" data-cy="card-value"><div class="tags" data-cy="tags">${states}</div></div>
 				</div>
 				${c.awsRegion ? `
-				<div class="detail-card full" data-cy="detail-card">
+				<div class="detail-card full" data-cy="detail-aws-region">
 					<div class="card-label" data-cy="card-label">aws region</div>
 					<div class="card-value" data-cy="card-value"><code style="font-family:'DM Mono',monospace;font-size:0.85rem">${c.awsRegion}</code></div>
 				</div>` : ''}
